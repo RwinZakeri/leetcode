@@ -1,6 +1,9 @@
 const palindrome = (string = "") => {
   const reversedString = string.split("").reverse().join("");
-  return reversedString === string ? true : false;
+
+  var test = string.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+  console.log(test);
 };
 
-palindrome("level");
+palindrome("hello wolrd : /");
